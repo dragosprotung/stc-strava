@@ -1,0 +1,43 @@
+{
+  "name": "dragosprotung/stc-strava",
+  "description": "Connector for Strava",
+  "keywords": [
+    "sport tracker connector",
+    "strava"
+  ],
+  "homepage": "https://github.com/dragosprotung/stc-strava",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dragos Protung",
+      "email": "dragos@protung.ro",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "dragosprotung/stc-core": "~2.0@dev",
+    "guzzlehttp/guzzle": "^6.2",
+    "ramsey/uuid": "^3.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "SportTrackerConnector\\Strava\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SportTrackerConnector\\Strava\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --coverage-text"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
